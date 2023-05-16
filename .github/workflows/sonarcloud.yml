@@ -43,6 +43,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"IsmaelBaena_Hackaton-FundacionEsplai" /o:"ismaelbaena" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.msbuild.solution="./API/HackatonFundacionEsplai.sln"
-          dotnet build
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"IsmaelBaena_Hackaton-FundacionEsplai" /o:"ismaelbaena" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          dotnet build API/HackatonFundacionEsplai.sln
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
