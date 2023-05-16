@@ -1,4 +1,4 @@
-# PROJECT NAME
+# Hackaton Fundacion Esplai: Login & Register
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ismaelbaena/hackaton-fundacionesplai/badge)](https://www.codefactor.io/repository/github/ismaelbaena/hackaton-fundacionesplai)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
@@ -11,15 +11,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=bugs)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 
 
-Project_name: utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
-
-> Breve descripción del proyecto, más o menos 15 - 20 palabras: 
-
-Define la uilidad básica del modulo para que easí la gente que tenía dudas respecto al título pueda salir de ellas y decidir si seguir leyendo.
-
-**Badges (opcional)** 
-En algunos archivos READMEs, es posible que hayas visto pequeñas imágenes que transmiten metadatos, como si todas las pruebas están pasando o no para el proyecto. Puedes usar [Shields](http://shields.io/) para agregar algunos a tu README. Muchos servicios también tienen instrucciones para agregar una insignia. 
-
+Aplicación [ASP.NET Core](https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core) MVC con [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core) que simula el registro e inicio de sesión de usuarios en una web.
 
 ## Usage
 Antes de comenzar a profundizar en los documentos de la API/Componente, sería genial ver cómo se ve el módulo en acción. Así puedo determinar rápidamente si el JS de ejemplo se ajusta al estilo y al problema deseados. La gente tiene muchas opiniones sobre cosas como promesas / devoluciones de llamada y ES6. Si se ajusta a los requisitos, entonces puedo proceder con más detalles.
@@ -32,21 +24,33 @@ La sección de API debe detallar los objetos y funciones del módulo, sus firmas
 
 ## Installation
 
-Dentro de un ecosistema en particular, puede haber una forma común de instalar cosas, como usar Yarn, NuGet o Homebrew. Sin embargo, considere la posibilidad de que quien esté leyendo su archivo README sea un novato y desee más orientación. Enumerar los pasos específicos ayuda a eliminar la ambigüedad y hace que las personas usen su proyecto lo más rápido posible. Si solo se ejecuta en un contexto específico, como una versión de lenguaje de programación o un sistema operativo en particular, o tiene dependencias que deben instalarse manualmente, agregue también una subsección de Requisitos.
-
-
+1. Clonar o descargar un .ZIP con el código de este repositorio.
+2. En caso de no tener node.js descargarlo
+3. Ejecutar el siguiente comando en la carpeta del proyecto: 
 ```shell
-    # Clone or install commands
-    npm i [project] o npm/yarn i 
+    node server.js
 ```
+4. Abrir el proyecto con [Visual Studio](https://visualstudio.microsoft.com) o un IDE similar.
+5. Añadir un servicio **SQL Server** con los siguientes campos:
+    - Connection String Name: `connectionLocalDb`
+    - Connection String Value: `Server=(localdb)\\mssqllocaldb;Database=aspnet-53bc9b9d-9d6a-45d4-8429-2a2761773502;Trusted_Connection=True;MultipleActiveResultSets=true`
+6. En la ventana **Package Manager Console**, introducir el siguiente comando: `update-database`
+7. Ejecutar.
+8. Entrar en la siguiente ruta: `http://localhost:3000/HTML/index.html`
+9. Disfrutar de la aplicacion
 
-```shell
-    # test o run commands
-    npm start
-    npm run dev ...
+En caso de problemas de dependencias, se deben instalar los siguientes paquetes NuGet en el proyecto:
+- [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/7.0.5?_src=template)
+- [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/7.0.5?_src=template)
+- [Microsoft.EntityFrameworkCore.Tools](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/7.0.5?_src=template)
+- [Microsoft.VisualStudio.Web.CodeGeneration.Design](https://www.nuget.org/packages/Microsoft.VisualStudio.Web.CodeGeneration.Design/7.0.6?_src=template)
+
+
+## Contacto
+
+- [Ismael Baena Mondéjar en **LinkedIn**](https://www.linkedin.com/in/ismael-baena-mondejar)
 ```
 
 ## License 
 
-Inlcuir la licéncia y el link a esta
 [MIT](https://opensource.org/licenses/MIT)
