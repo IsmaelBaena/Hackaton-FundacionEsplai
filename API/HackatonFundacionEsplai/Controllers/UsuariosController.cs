@@ -33,7 +33,7 @@ namespace HackatonFundacionEsplai.Controllers
             return await _context.Usuarios.ToListAsync();
         }
 
-        // GET: api/Usuarios/CheckCredentials
+        // GET: api/Usuarios/CheckCredentials/email_ejemplo@ejemplo.com,psswrd_ejemplo
         [HttpGet("CheckCredentials/email_{email},psswrd_{psswrd}")]
         public async Task<ActionResult<bool>> CheckCredentials(string email, string psswrd)
         {
@@ -55,7 +55,7 @@ namespace HackatonFundacionEsplai.Controllers
                 return false;
         }
 
-        // GET: api/Usuarios/CheckCredentials
+        // GET: api/Usuarios/EmailExist/ejemplo@ejemplo.com
         [HttpGet("EmailExist/{id}")]
         public async Task<ActionResult<bool>> CheckEmailRegistered(string id)
         {
@@ -67,7 +67,7 @@ namespace HackatonFundacionEsplai.Controllers
             return UsuarioExists(id);
         }
 
-        // GET: api/Usuarios/5
+        // GET: api/Usuarios/GetById/ejemplo@ejemplo.com
         [HttpGet("GetById/{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(string id)
         {
@@ -85,8 +85,7 @@ namespace HackatonFundacionEsplai.Controllers
             return usuario;
         }
 
-        // PUT: api/Usuarios/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Usuarios/ejemplo@ejemplo.com
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(string id, Usuario usuario)
         {
@@ -116,8 +115,7 @@ namespace HackatonFundacionEsplai.Controllers
             return NoContent();
         }
 
-        // POST: api/Usuarios
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Usuarios/Post
         [HttpPost("Post")]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
@@ -145,8 +143,8 @@ namespace HackatonFundacionEsplai.Controllers
             return CreatedAtAction("GetUsuario", new { id = usuario.Email }, usuario);
         }
 
-        // DELETE: api/Usuarios/5
-        [HttpDelete("{id}")]
+        // DELETE: api/Usuarios/Delete/ejemplo@ejemplo.com
+        [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteUsuario(string id)
         {
             if (_context.Usuarios == null)
