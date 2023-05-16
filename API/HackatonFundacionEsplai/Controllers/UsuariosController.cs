@@ -67,7 +67,6 @@ namespace HackatonFundacionEsplai.Controllers
             return UsuarioExists(id);
         }
 
-
         // GET: api/Usuarios/5
         [HttpGet("GetById/{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(string id)
