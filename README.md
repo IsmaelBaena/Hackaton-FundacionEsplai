@@ -4,7 +4,6 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=IsmaelBaena_Hackaton-FundacionEsplai&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=IsmaelBaena_Hackaton-FundacionEsplai)
@@ -12,15 +11,6 @@
 
 
 Aplicación [ASP.NET Core](https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core) MVC con [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core) que simula el registro e inicio de sesión de usuarios en una web.
-
-## Usage
-Antes de comenzar a profundizar en los documentos de la API/Componente, sería genial ver cómo se ve el módulo en acción. Así puedo determinar rápidamente si el JS de ejemplo se ajusta al estilo y al problema deseados. La gente tiene muchas opiniones sobre cosas como promesas / devoluciones de llamada y ES6. Si se ajusta a los requisitos, entonces puedo proceder con más detalles.
-
-## API/Component
-
-El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código. 
-
-La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
 
 ## Installation
 
@@ -49,7 +39,6 @@ En caso de problemas de dependencias, se deben instalar los siguientes paquetes 
 ## Contacto
 
 - [Ismael Baena Mondéjar en **LinkedIn**](https://www.linkedin.com/in/ismael-baena-mondejar)
-```
 
 ## License 
 
